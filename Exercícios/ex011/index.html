@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <!-- Esta ordem deve ser sempre respeitada, se não, não funcionará. -->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em páginas web (HTML5).</p>
+    <p>O elemento &lt;audio&gt; permite reproduzir áudio em páginas web.</p>
+    
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/Rock Intro 4 - Audionautix.mp3" type="audio/mpeg">
+        <source src="media/Rock Intro 4 - Audionautix.ogg" type="audio/ogg">
+        <source src="media/Rock Intro 4 - Audionautix.wav" type="audio/wav">
+        <p>Seu navegador não suporta o elemento de áudio.</p>
+        <a href="media/Rock Intro 4 - Audionautix.mp3" Clique aqui para baixar o arquivo MP3</a></p>
+        <!-- Esta ordem deve ser sempre respeitada para priorizar melhor qualidade de áudio. -->
+        <!-- Evitar utilizar audios do tipo .wav pois são muito pesados.-->
+</body>
+</html>
