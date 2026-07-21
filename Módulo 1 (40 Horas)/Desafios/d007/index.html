@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 7</title>
+</head>
+<body>
+   <h1>Desafio 7: Imagem FLexível</h1>
+
+    <h2>O que será desenvolvido:</h2>
+    <p>
+    O desafio proposto foi criar um site que apresente uma <strong>imagem flexível</strong>, que mude conforme as proporções e efeitos de flexibilização da janela do navegador.
+    Para isso, irei utilizar as tags:<strong> &lt;picture&gt;, &lt;img&gt; e &lt;source&gt;</strong>
+    </p> 
+
+    <h2>Imagem Flexível:</h2>
+
+    <h3>Quem é Saori Kido?</h3>
+    <p><strong>Saori Kido</strong> é a reencarnação da deusa <strong>Atena</strong> no anime e mangá <i>Os Cavaleiros do Zodíaco</i>.
+    Criada no Japão como neta adotiva do bilionário Mitsumasa Kido, ela descobre sua natureza divina na juventude e assume o fardo de liderar Seiya e os Cavaleiros de Bronze na proteção da Terra. É a figura central da obra, conhecida por seu amor incondicional pela humanidade e por se sacrificar constantemente para salvar o mundo de divindades malignas.</p> <br>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem_p.jpg"> 
+        <source media="(max-width: 1050px)" srcset="imagens/imagem_m.jpg">
+        <img src="imagens/imagem_g.jpg" alt="Imagem Flexível">
+    </picture>
+
+</body>
+</html>
